@@ -1,4 +1,3 @@
-
 def addition(a, b):
     a = float(a)
     b = float(b)
@@ -27,6 +26,12 @@ def division(a, b):
     return c
 
 
+def square(a):
+    a = float(a)
+    c = a * a
+    return c
+
+
 class MyCalculator:
     result = 0
 
@@ -47,4 +52,8 @@ class MyCalculator:
 
     def divide(self, a, b):
         self.result = division(a, b)
+        return self.result
+
+    def square(self, a):
+        self.result = square(a)
         return self.result
