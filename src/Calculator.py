@@ -6,6 +6,13 @@ def addition(a, b):
     return c
 
 
+def subtraction(a, b):
+    a = float(a)
+    b = float(b)
+    c = b - a
+    return c
+
+
 class MyCalculator:
     result = 0
 
@@ -14,4 +21,8 @@ class MyCalculator:
 
     def add(self, a, b):
         self.result = addition(a, b)
+        return self.result
+
+    def subtract(self, a, b):
+        self.result = subtraction(a, b)
         return self.result
