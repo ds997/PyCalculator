@@ -13,6 +13,13 @@ def subtraction(a, b):
     return c
 
 
+def multiplication(a, b):
+    a = float(a)
+    b = float(b)
+    c = a * b
+    return c
+
+
 class MyCalculator:
     result = 0
 
@@ -25,4 +32,8 @@ class MyCalculator:
 
     def subtract(self, a, b):
         self.result = subtraction(a, b)
+        return self.result
+
+    def multiply(self, a, b):
+        self.result = multiplication(a, b)
         return self.result
